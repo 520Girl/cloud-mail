@@ -13,9 +13,7 @@
 
 ## Project Showcase
 
-- [Online Demo](https://skymail.ink)<br>
-- [Deployment Guide](https://doc.skymail.ink/en/)<br>
-- [UI Deployment](https://doc.skymail.ink/en/guide/via-ui.html)
+- [Online Demo](https://aliyun.edu.kg/)<br>
 
 
 | ![](/doc/demo/demo1.png) | ![](/doc/demo/demo2.png) |
@@ -112,16 +110,6 @@ cloud-mail
 
 ```
 
-## Support
-
-<a href="https://doc.skymail.ink/support.html">
-<img width="170px" src="./doc/images/support.png" alt="">
-</a>
-
 ## License
 
 This project is licensed under the [MIT](LICENSE) license.
-
-## Communication
-
-[Telegram](https://t.me/cloud_mail_tg)

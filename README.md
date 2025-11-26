@@ -18,9 +18,7 @@
 
 ## 项目展示
 
-- [在线演示](https://skymail.ink)<br>
-- [部署文档](https://doc.skymail.ink)<br>
-- [界面部署](https://doc.skymail.ink/guide/via-ui.html)
+- [在线演示](https://aliyun.edu.kg/)<br>
 
 | ![](/doc/demo/demo1.png) | ![](/doc/demo/demo2.png) |
 |-----------------------|-----------------------|
@@ -119,21 +117,7 @@ cloud-mail
 │   ├── package.json			# 项目依赖
 └── └── env.release				# 项目配置
 ```
-
-## 赞助
-
-<a href="https://doc.skymail.ink/support.html" >
-<img width="170px" src="./doc/images/support.png" alt="">
-</a>
-
 ## 许可证
 
 本项目采用 [MIT](LICENSE) 许可证	
-
-
-## 交流
-
-[Telegram](https://t.me/cloud_mail_tg)
-
-
 
