@@ -1,22 +1,49 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#F1F1F1" id="theme-color-meta">
-  <meta name="description" content="响应式邮箱服务，支持邮件发送，邮件批量转发，项目合作可联系我admin@aliyun.edu.kg">
-  <title>Cloud Mail</title>
+
+  <!-- SEO 元数据 -->
+  <meta name="description" content="navai Mail - 高效安全的云邮箱服务。支持邮件发送、批量转发、IMAP/SMTP、多账户管理。免费响应式邮件客户端，在线邮箱系统。">
+  <meta name="keywords" content="云邮箱,邮件客户端,在线邮箱,邮件管理,批量转发,免费邮箱,IMAP,SMTP,邮箱系统,navai Mail">
+  <meta name="author" content="navai Mail Team">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  <!-- Open Graph 元标签 -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="navai Mail - 云邮箱服务平台">
+  <meta property="og:description" content="高效安全的云邮箱服务，支持邮件发送、批量转发、多账户管理。">
+  <meta property="og:url" content="https://navai.vip">
+  <meta property="og:image" content="https://navai.vip/public/mail.png">
+  <meta property="og:site_name" content="navai Mail">
+
+  <!-- Twitter 卡片 -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="navai Mail - 云邮箱服务平台">
+  <meta name="twitter:description" content="高效安全的云邮箱服务，支持邮件发送、批量转发。">
+  <meta name="twitter:image" content="https://navai.vip/public/mail.png">
+
+  <!-- 其他 SEO 标签 -->
+  <meta name="language" content="zh-CN">
+  <meta name="revisit-after" content="7 days">
+  <meta name="canonical" content="https://navai.vip">
+
+  <title>navai Mail - 智能邮箱服务 | 在线邮件管理平台</title>
   <link rel="icon" href="/public/mail.png" type="image/png">
+  <link rel="canonical" href="https://navai.vip">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   <script>
-    const uiStoreStr =  localStorage.getItem('ui')
+    const uiStoreStr = localStorage.getItem('ui')
     if (uiStoreStr) {
-      const uiStore =  JSON.parse(uiStoreStr)
+      const uiStore = JSON.parse(uiStoreStr)
       const root = document.documentElement
       root.setAttribute('class', uiStore.dark ? 'dark' : '');
       const metaTag = document.getElementById('theme-color-meta');
-      const isMobile =  !window.matchMedia("(pointer: fine) and (hover: hover)").matches;
+      const isMobile = !window.matchMedia("(pointer: fine) and (hover: hover)").matches;
       metaTag.setAttribute('content', uiStore.dark ? (isMobile ? '#141414' : '#000000') : (isMobile ? '#FFFFFF' : '#F1F1F1'));
     }
   </script>
@@ -25,9 +52,11 @@
   html {
     background: #FFFFFF;
   }
+
   .dark {
     background: #141414;
   }
+
   #loading-first {
     position: fixed;
     left: 0;
@@ -103,20 +132,22 @@
     }
   }
 </style>
+
 <body>
-<div id="loading-first" >
-  <div class="loading-icon">
-    <svg class="circular" viewBox="0 0 20 20">
-      <g class="loading-path">
-        <circle r="3.375" class="dot1" rx="0" ry="0"/>
-        <circle r="3.375" class="dot2" rx="0" ry="0"/>
-        <circle r="3.375" class="dot4" rx="0" ry="0"/>
-        <circle r="3.375" class="dot3" rx="0" ry="0"/>
-      </g>
-    </svg>
+  <div id="loading-first">
+    <div class="loading-icon">
+      <svg class="circular" viewBox="0 0 20 20">
+        <g class="loading-path">
+          <circle r="3.375" class="dot1" rx="0" ry="0" />
+          <circle r="3.375" class="dot2" rx="0" ry="0" />
+          <circle r="3.375" class="dot4" rx="0" ry="0" />
+          <circle r="3.375" class="dot3" rx="0" ry="0" />
+        </g>
+      </svg>
+    </div>
   </div>
-</div>
-<div id="app"></div>
-<script type="module" src="/src/main.js"></script>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
 </body>
+
 </html>
